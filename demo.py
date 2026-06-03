@@ -62,13 +62,6 @@ for div in divs:
         image_url = ""
     image_urls.append(image_url)
 
-
-    
-
-
-
-
-
 # Create a DataFrame
 data = {
     'Name': names,
