@@ -3,7 +3,7 @@ import pandas as pd
 import openpyxl
 
 # Read the HTML file
-with open('Amazon_02.html', 'r', encoding='utf-8') as file:
+with open('Amazon_Book01.html', 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file, 'html.parser')
 
 # Initialize lists to store the extracted data
@@ -74,7 +74,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Save the DataFrame to an Excel file
-output_path = 'Bookdata03.xlsx'
+output_path = 'Bookdata01.xlsx'
 df.to_excel(output_path, index=False)
 
 print(f'Data has been written to {output_path}')
